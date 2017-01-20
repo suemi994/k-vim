@@ -318,6 +318,9 @@ call plug#end()
     let g:syntastic_auto_loc_list = 0
     let g:syntastic_auto_jump = 0
     let g:syntastic_loc_list_height = 5
+    let g:syntastic_cpp_checkers = ['gcc']
+    let g:syntastic_cpp_compiler = 'gcc'
+    let g:syntastic_cpp_compiler_options = '-std=c++14'
 
     function! ToggleErrors()
         let old_last_winnr = winnr('$')
@@ -378,6 +381,7 @@ call plug#end()
     let g:ycm_collect_identifiers_from_tags_files = 1
     " 开启语法关键字补全
     let g:ycm_seed_identifiers_with_syntax=1
+    let g:ycm_show_diagnostics_ui = 0
 
     "let g:ycm_seed_identifiers_with_syntax=1   "语言关键字补全, 不过python关键字都很短，所以，需要的自己打开
 
