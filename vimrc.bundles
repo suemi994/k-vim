@@ -139,6 +139,9 @@ Plug 'tomasr/molokai'
 " 主题 obsidian
 Plug 'https://github.com/abra/vim-obsidian'
 
+" java补全插件
+Plug 'https://github.com/artur-shaik/vim-javacomplete2'
+
 
 " nav
 " nerdtree nerdtreetabs
@@ -314,6 +317,8 @@ call plug#end()
     " if js
     " let g:syntastic_javascript_checkers = ['jsl', 'jshint']
     " let g:syntastic_html_checkers=['tidy', 'jshint']
+     
+    let g:syntastic_java_checkers = ['javac']
 
     " to see error location list
     let g:syntastic_always_populate_loc_list = 1
