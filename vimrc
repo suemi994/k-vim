@@ -665,8 +665,8 @@ endif
 set background=dark
 set t_Co=256
 
-" colorscheme solarized
-colorscheme molokai
+colorscheme solarized
+" colorscheme molokai
 " colorscheme desert
 " colorscheme obsidian
 
@@ -695,3 +695,5 @@ imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
 
 nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+
+set norelativenumber number

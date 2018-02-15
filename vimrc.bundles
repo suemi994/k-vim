@@ -139,6 +139,9 @@ Plug 'tomasr/molokai'
 " 主题 obsidian
 Plug 'https://github.com/abra/vim-obsidian'
 
+" 主题solarized-dark
+Plug 'https://github.com/altercation/vim-colors-solarized'
+
 " java补全插件
 Plug 'https://github.com/artur-shaik/vim-javacomplete2'
 
@@ -384,7 +387,7 @@ call plug#end()
     let g:ycm_key_list_previous_completion = ['<Up>']
     let g:ycm_complete_in_comments = 1  "在注释输入中也能补全
     let g:ycm_complete_in_strings = 1   "在字符串输入中也能补全
-    let g:ycm_use_ultisnips_completer = 0 "提示UltiSnips
+    let g:ycm_use_ultisnips_completer = 1 "提示UltiSnips
     let g:ycm_collect_identifiers_from_comments_and_strings = 1   "注释和字符串中的文字也会被收入补全
     let g:ycm_collect_identifiers_from_tags_files = 1
     " 开启语法关键字补全
