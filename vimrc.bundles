@@ -144,6 +144,8 @@ Plug 'tomasr/molokai'
 " 主题 obsidian
 Plug 'https://github.com/abra/vim-obsidian'
 
+Plug 'https://github.com/morhetz/gruvbox'
+
 " 主题solarized-dark
 Plug 'https://github.com/altercation/vim-colors-solarized'
 
@@ -322,7 +324,7 @@ if has_key(g:plugs, 'syntastic')
     " javascript
     " let g:syntastic_javascript_checkers = ['jsl', 'jshint']
     " let g:syntastic_html_checkers=['tidy', 'jshint']
-     
+
     let g:syntastic_java_checkers = ['javac']
     " npm install -g eslint eslint-plugin-standard eslint-plugin-promise eslint-config-standard
     " npm install -g eslint-plugin-import eslint-plugin-node eslint-plugin-html babel-eslint
