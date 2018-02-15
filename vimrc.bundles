@@ -443,12 +443,9 @@ endif
     let g:ycm_collect_identifiers_from_tags_files = 1
     " 开启语法关键字补全
     let g:ycm_seed_identifiers_with_syntax=1
-<<<<<<< HEAD
     let g:ycm_show_diagnostics_ui = 0
-=======
     " 回车作为选中
     let g:ycm_key_list_stop_completion = ['<CR>']
->>>>>>> 88e08317481c310541efe7989733950850e4138c
 
     "let g:ycm_seed_identifiers_with_syntax=1   "语言关键字补全, 不过python关键字都很短，所以，需要的自己打开
 
