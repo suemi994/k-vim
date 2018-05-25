@@ -25,8 +25,8 @@
 "==========================================
 
 " 修改leader键
-let mapleader = ','
-let g:mapleader = ','
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 
 " 开启语法高亮
 syntax on
@@ -500,8 +500,8 @@ nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
 autocmd TabLeave * let g:last_active_tab = tabpagenr()
 
 " 新建tab  Ctrl+t
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-t>     <Esc>:tabnew<CR>
+"nnoremap <C-t>     :tabnew<CR>
+"inoremap <C-t>     <Esc>:tabnew<CR>
 
 
 " => 选中及操作改键
@@ -537,8 +537,8 @@ cmap w!! w !sudo tee >/dev/null %
 inoremap kj <Esc>
 
 " 滚动Speed up scrolling of the viewport slightly
-nnoremap <C-e> 2<C-e>
-nnoremap <C-y> 2<C-y>
+"nnoremap <C-e> 2<C-e>
+"nnoremap <C-y> 2<C-y>
 
 
 " Jump to start and end of line using the home row keys
@@ -693,3 +693,5 @@ imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 
 set norelativenumber number
 set clipboard=unnamed
+
+
