@@ -659,11 +659,11 @@ endif
 set background=dark
 set t_Co=256
 
-colorscheme gruvbox
+" colorscheme gruvbox
 " colorscheme solarized
 " colorscheme molokai
 " colorscheme desert
-" colorscheme obsidian
+colorscheme obsidian
 
 
 " 设置标记一列的背景颜色和数字一行颜色一致

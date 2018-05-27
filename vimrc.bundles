@@ -163,16 +163,19 @@ Plug 'majutsushi/tagbar'
 
 " text object
 " 支持自定义文本对象
-Plug 'kana/vim-textobj-user'
+" Plug 'kana/vim-textobj-user'
 " 增加行文本对象: l   dal yal cil
-Plug 'kana/vim-textobj-line'
+" Plug 'kana/vim-textobj-line'
 " 增加文件文本对象: e   dae yae cie
-Plug 'kana/vim-textobj-entire'
+" Plug 'kana/vim-textobj-entire'
 " 增加缩进文本对象: i   dai yai cii - 相同缩进属于同一块
-Plug 'kana/vim-textobj-indent'
+" Plug 'kana/vim-textobj-indent'
 
 " 增加CScope
-Plug 'https://github.com/brookhong/cscope.vim'
+Plug 'brookhong/cscope.vim'
+
+" 增加zeal文档查询插件
+Plug 'KabbAmine/zeavim.vim'
 
 if count(g:bundle_groups, 'tmux')
     " tmux
@@ -222,7 +225,8 @@ if count(g:bundle_groups, 'ruby')
     Plug 'vim-ruby/vim-ruby'
     Plug 'tpope/vim-rails'
     " dir / dar
-    Plug 'nelstrom/vim-textobj-rubyblock'
+    "Plug 'nelstrom/vim-textobj-rubyblock'
+
 
     " 有bug, 和当前有冲突, 尚未解决, 不要打开 => TODO: solve this problem
     " Plug 'tpope/vim-endwise'
