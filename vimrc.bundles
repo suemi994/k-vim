@@ -150,7 +150,7 @@ Plug 'https://github.com/morhetz/gruvbox'
 Plug 'https://github.com/altercation/vim-colors-solarized'
 
 " java补全插件
-Plug 'https://github.com/artur-shaik/vim-javacomplete2'
+" Plug 'https://github.com/artur-shaik/vim-javacomplete2'
 
 
 " nav

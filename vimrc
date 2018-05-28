@@ -92,9 +92,9 @@ set noswapfile
 set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
 
 " 突出显示当前列
-set cursorcolumn
+" set cursorcolumn
 " 突出显示当前行
-set cursorline
+" set cursorline
 
 
 " 设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制, 不需要可以去掉
@@ -550,7 +550,7 @@ inoremap kj <Esc>
 nnoremap <leader>q :q<CR>
 
 " Quickly save the current file
-nnoremap <leader>w :w<CR>
+nnoremap <leader>w :wall<CR>
 
 " 交换 ' `, 使得可以快速使用'跳到marked位置
 nnoremap ' `
