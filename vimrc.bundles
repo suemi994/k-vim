@@ -177,6 +177,9 @@ Plug 'brookhong/cscope.vim'
 " 增加zeal文档查询插件
 Plug 'KabbAmine/zeavim.vim'
 
+" 增加clang 格式化代码
+Plug 'rhysd/vim-clang-format'
+
 if count(g:bundle_groups, 'tmux')
     " tmux
     " For tmux navigator Ctrl-hjkl
@@ -343,9 +346,9 @@ if has_key(g:plugs, 'syntastic')
     let g:syntastic_auto_loc_list = 0
     let g:syntastic_auto_jump = 0
     let g:syntastic_loc_list_height = 5
-    let g:syntastic_cpp_checkers = ['gcc']
-    let g:syntastic_cpp_compiler = 'gcc'
-    let g:syntastic_cpp_compiler_options = '-std=c++14'
+    let g:syntastic_cpp_checkers = ['g++']
+    let g:syntastic_cpp_compiler = 'g++'
+    let g:syntastic_cpp_compiler_options = '-std=c++17'
 
     function! ToggleErrors()
         let old_last_winnr = winnr('$')
@@ -914,6 +917,18 @@ endif
     " nnoremap <silent> <leader>es :Esformatter<CR>
     " vnoremap <silent> <leader>es :EsformatterVisual<CR>
 
+" }}}
+
+" 基于clang的代码格式化
+" clang-format {{{
+    let g:clang_format#style_options = {
+            \ "Standard" : "C++11"}
+    let g:clang_format#code_style='google'
+    let g:clang_format#command ="clang-format"
+    autocmd FileType c,cpp  ClangFormatAutoEnable
+    autocmd FileType c,cpp  nnoremap <buffer><Leader>l :<C-u>ClangFormat<CR>
+    autocmd FileType c,cpp  vnoremap <buffer><Leader>l :ClangFormat<CR>
+    nmap <Leader>C :ClangFormatAutoToggle<CR>
 " }}}
 
 "------------------------------------------- end of configs --------------------------------------------

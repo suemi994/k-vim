@@ -694,4 +694,6 @@ imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 set norelativenumber number
 set clipboard=unnamed
 
-
+" 解决c++命名空间缩进
+autocmd FileType cc,h,c set shiftwidth=2
+set cino=N-s
