@@ -780,6 +780,8 @@ endif
     " thank to @ListenerRi, see https://github.com/wklken/k-vim/issues/165
     let g:nerdtree_tabs_open_on_console_startup=0
     let g:nerdtree_tabs_open_on_gui_startup=0
+    " 设置NerdTree宽度
+    let NERDTreeWinSize=40
 " }}}
 
 
@@ -799,6 +801,8 @@ endif
     let g:tagbar_autofocus = 1
     " let g:tagbar_autoshowtag = 1
     " let g:tagbar_show_visibility = 1
+    let g:tagbar_width=50
+
     " for ruby
     let g:tagbar_type_ruby = {
         \ 'kinds' : [
