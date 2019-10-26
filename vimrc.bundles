@@ -472,6 +472,9 @@ endif
     "nnoremap <C-]>:YcmCompleter GoToDefinitionElseDeclaration<CR>
     nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
 
+    if !empty(glob("~/.vim/ycm_extra_conf.py"))
+        let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
+    endif
     " 引入，可以补全系统，以及python的第三方包 针对新老版本YCM做了兼容
     " old version
     if !empty(glob("~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"))
@@ -489,6 +492,7 @@ endif
         \ 'tagbar' : 1,
         \ 'gitcommit' : 1,
         \}
+    let g:ycm_confirm_extra_conf = 0
 " }}}
 
 
